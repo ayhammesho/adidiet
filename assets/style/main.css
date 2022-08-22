@@ -331,6 +331,7 @@ p {
   gap: 1.3rem;
   border-radius: 0px 10px 10px 0;
   transform: translateY(-50%);
+  z-index: 10;
 }
 
 .parent {
