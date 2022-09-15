@@ -1,9 +1,13 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <meta name="description" content=" دايت صحي مصمم بعناية دون جوع أو حرمان إن كنت تشعرين بأن جسدك بحاجة عناية إضافية، ولا تريدين تعريضه
+  لمخاطر الدايت غير المدروسة والتمارين القاسية، فأنت في المكان
+  .المناسب">
+<meta name="keywords" content="adidiet" />
   <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
   <link rel="stylesheet" href="assets/style/main.css" />
   <link href="assets/style/bootstrap.min.css" rel="stylesheet"
@@ -14,26 +18,38 @@
 </head>
 
 <body>
+  <!-- شريط عروض -->
+ 
+  <div class="marquee d-md-block d-none">
+    <div>
+      <span>بمناسبة العيد الوطني للسعودية حضرنا لكم تخفيضات تصل حتى 30% <a href="#our_proccess"> سارع بالأشتراك الأن</a></span>
+      <span>بمناسبة العيد الوطني للسعودية حضرنا لكم تخفيضات تصل حتى 30% <a href="#our_proccess"> سارع بالأشتراك الأن</a></span>
+    </div>
+  </div>
+  <div class="fixed d-md-none">
+    <h3>بمناسبة العيد الوطني للسعودية حضرنا لكم تخفيضات تصل حتى 30% </h3>
+  
+  </div>
   <header class="bg">
     <!-- navbar -->
     <nav class="navbar d-md-none d-block">
       <div class="container-fluid">
+       
+        <button class="navbar-toggler" type="button">
+          <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="logo col-md-1 col-2 ">
           <img class="w-100" src="assets/img/logo.png" alt="" />
         </div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-          aria-controls="offcanvasNavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas offcanvas-end">
           <div class="offcanvas-header">
             <h5 class="offcanvas-title secondary-color">Adidiet</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <button type="button" class="btn-close"></button>
           </div>
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
-                <a class="nav-link active" href="#who_am_i">من أنا</a>
+                <a class="nav-link" href="#who_am_i">من أنا</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" class="btn-close" href="#our_system">أنظمتنا</a>
@@ -50,13 +66,12 @@
             </ul>
           </div>
         </div>
+        <div class="offcanvas-backdrop fade" style="display: none;"></div>
       </div>
     </nav>
     <nav class="navbar navbar-default navbar-fixed-top d-md-block d-none">
       <div class="container-md d-flex align-items-center">
-        <div class="logo col-md-1 col-2 ">
-          <img class="w-100" src="assets/img/logo.png" alt="" />
-        </div>
+       
         <ul class="d-flex gap-4 navbar">
           <li class="nav-link"><a href="#who_am_i">من أنا</a></li>
           <li class="nav-link"><a href="#our_system">أنظمتنا</a></li>
@@ -64,15 +79,16 @@
           <li class="nav-link"><a href="#testimonials">نتائجنا</a></li>
           <li class="nav-link"><a href="#FAQ">الأسئلة المتكررة</a></li>
         </ul>
+        <div class="logo col-md-1 col-2 ">
+          <img class="w-100" src="assets/img/logo.png" alt="" />
+        </div>
       </div>
     </nav>
 
     <!-- قسم بداية الصفحة -->
     <div class="header align-self-center py-5 px-md-0 px-2">
       <div class="container d-flex justify-content-between align-items-center h-100 flex-column-reverse flex-md-row">
-        <div class="img-container col-md-5 d-none d-md-block">
-          <img class="img-fluid" src="assets/img/Hero.webp" alt="" />
-        </div>
+       
         <div class="hero-content col-lg-5 d-flex gap-4 flex-column">
           <h1 class=" h1 fw-bold">
             دايت صحي مصمم بعناية دون جوع أو حرمان
@@ -80,17 +96,20 @@
           <p class="h3 fw-normal">
             إن بدأت تشعرين بأن جسدك بحاجة عناية إضافية، ولا تريدين تعريضه
             لمخاطر الدايت غير المدروسة والتمارين القاسية، فأنت في المكان
-            المناسب
+          المناسب.
           </p>
           <div class="btns ">
             <button type="button" class="btn btn-sub fw-bold main-color-dark--bg text-white mx-3 px-0">
               <a class="text-white text-decoration-none " href="#our_system"> الأنظمة التي يدعمها الدايت</a>
             </button>
             <button type="button" class="btn btn-main main-color-dark--bg text-white fw-bold px-3 py-2">
-              أحجز إشتراكك الأن
+              أحجز إشتراكك الآن !
             </button>
 
           </div>
+        </div>
+        <div class="img-container col-md-5 d-none d-md-block">
+          <img class="img-fluid" src="assets/img/Hero.webp" alt="" />
         </div>
       </div>
     </div>
@@ -100,15 +119,10 @@
     <div class="section_text text-center py-lg-5">
       <h1 class="section_header text-center pb-2">من أنا</h1>
     </div>
-    <div class="">
+    
       <div
         class="container d-flex justify-content-between align-items-center flex-lg-row flex-column-reverse gap-5 py-4">
-        <div class="youtube col-lg-6">
-          <iframe width="560" height="420" src="https://www.youtube.com/embed/6U4oSAytozg" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-        </div>
+        
 
         <div class="who-im-content col-lg-5 d-flex gap-lg-4 flex-column">
           <h1 class="h2 text-light-dark">
@@ -117,12 +131,18 @@
           </h1>
           <p class="h4 main-color-dark">
             أصمم لك جدولاً غذائياً مصمماً حسب طولك، وزنك، عمرك، حالتك الصحية
-            وجدولاً رياضياً مناسباً لطبيعة وشكل جسدك، ويحقق هدفك الخاص
+           وجدولاً رياضياً مناسباً لطبيعة وشكل جسدك، ويحقق هدفك الخاص.
           </p>
 
         </div>
+        <div class="youtube col-lg-6">
+          <iframe width="560" height="420" src="https://www.youtube.com/embed/k465_Je58fI" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
       </div>
-    </div>
+    
   </section>
   <!-- ///////////////////////////// قسم الأنظمة //////////////////////////////// -->
   <section id="our_system" class="py-5 px-md-0 px-2">
@@ -132,79 +152,79 @@
     <div class="container">
       <div class="parent">
         <div
-          class="div1 border-main py-md-4 py-1 align-self-center px-2 text-center text-white secondary-color--bg bg-hover fw-bold row-1">
+          class="div1 py-md-4 py-1 align-self-center px-2 text-center card-grid-lg fw-bold row-1">
           خسارة الوزن </div>
         <div
-          class="div2 border-main py-md-4 py-1 align-self-center px-2 text-center text-white secondary-color--bg bg-hover fw-bold row-1">
+          class="div2 py-md-4 py-1 align-self-center px-2 text-center card-grid-lg fw-bold row-1">
           نظام صحي للحامل</div>
         <div
-          class="div3 border-main py-md-4 py-1 align-self-center px-2 text-center text-white secondary-color--bg bg-hover fw-bold row-1">
+          class="div3 py-md-4 py-1 align-self-center px-2 text-center card-grid-lg fw-bold row-1">
           أنظمة لمرضى السكر</div>
         <div
-          class="div4 border-main py-md-4 py-1 align-self-center px-2 text-center text-white secondary-color--bg bg-hover fw-bold row-1">
+          class="div4 py-md-4 py-1 align-self-center px-2 text-center card-grid-lg fw-bold row-1">
           أنظمة لوكارب</div>
         <div
-          class="div5 border-main py-md-4 py-1 align-self-center px-2 text-center text-white secondary-color--bg bg-hover fw-bold row-1">
+          class="div5 py-md-4 py-1 align-self-center px-2 text-center card-grid-lg fw-bold row-1">
           زيادة الوزن</div>
         <div
-          class="div6 border-main py-md-4 py-1 align-self-center px-2 text-center text-white secondary-color--bg bg-hover fw-bold row-2">
+          class="div6 py-md-4 py-1 align-self-center px-2 text-center card-grid-lg fw-bold row-2">
           نظام صحي للمرضعة</div>
         <div
-          class="div7 border-main py-md-4 py-1 align-self-center px-2 text-center text-white secondary-color--bg bg-hover fw-bold row-2">
+          class="div7 py-md-4 py-1 align-self-center px-2 text-center card-grid-lg fw-bold row-2">
           أنظمة لمرضى الكبد</div>
         <div
-          class="div8 border-main py-md-4 py-1 align-self-center px-2 text-center text-white secondary-color--bg bg-hover fw-bold row-2">
+          class="div8 py-md-4 py-1 align-self-center px-2 text-center card-grid-lg fw-bold row-2">
           أنظمة الكيتو</div>
         <div
-          class="div9 border-main py-md-4 py-1 align-self-center px-2 text-center text-white secondary-color--bg bg-hover fw-bold row-2">
+          class="div9 py-md-4 py-1 align-self-center px-2 text-center card-grid-lg fw-bold row-2">
           ثبات الوزن</div>
         <div
-          class="div10 border-main py-md-4 py-1 align-self-center px-2 text-center text-white secondary-color--bg bg-hover fw-bold row-2">
+          class="div10 py-md-4 py-1 align-self-center px-2 text-center card-grid-lg fw-bold row-2">
           أنظمة لسمنة الأطفال</div>
         <div
-          class="div11 border-main py-md-4 py-1 align-self-center px-2 text-center text-white secondary-color--bg bg-hover fw-bold row-3">
+          class="div11 py-md-4 py-1 align-self-center px-2 text-center card-grid-lg fw-bold row-3">
           أنظمة لمرضى الكلى</div>
         <div
-          class="div12 border-main py-md-4 py-1 align-self-center px-2 text-center text-white secondary-color--bg bg-hover fw-bold row-3">
+          class="div12 py-md-4 py-1 align-self-center px-2 text-center card-grid-lg fw-bold row-3">
           الصيام المتقطع</div>
         <div
-          class="div13 border-main py-md-4 py-1 align-self-center px-2 text-center text-white secondary-color--bg bg-hover fw-bold row-3">
+          class="div13 py-md-4 py-1 align-self-center px-2 text-center card-grid-lg fw-bold row-3">
           كسر ثبات الوزن</div>
         <div
-          class="div14 border-main py-md-4 py-1 align-self-center px-2 text-center text-white secondary-color--bg bg-hover fw-bold row-3">
-          أنظمة لتكيسات المبايض</div>
-        <div
-          class="div15 border-main py-md-4 py-1 align-self-center px-2 text-center text-white secondary-color--bg bg-hover fw-bold row-3">
-          أنظمة لأمراض المناعة</div>
-        <div
-          class="div16 border-main py-md-4 py-1 align-self-center px-2 text-center text-white secondary-color--bg bg-hover fw-bold row-4">
-          أنظمة نباتية</div>
-        <div
-          class="div17 border-main py-md-4 py-1 align-self-center px-2 text-center text-white secondary-color--bg bg-hover fw-bold row-4">
-          تعديل سلوك غذائي</div>
-        <div
-          class="div18 border-main py-md-4 py-1 align-self-center px-2 text-center text-white secondary-color--bg bg-hover fw-bold row-4">
-          أنظمة هرمون الحليب</div>
-        <div
-          class="div19 border-main py-md-4 py-1 align-self-center px-2 text-center text-white secondary-color--bg bg-hover fw-bold row-4">
-          أنظمة للكوليسترول</div>
-        <div
-          class="div20 border-main py-md-4 py-1 align-self-center px-2 text-center text-white secondary-color--bg bg-hover fw-bold row-4">
-          أنظمة للمتكممين</div>
-        <div
-          class="div21 border-main py-md-4 py-1 align-self-center px-2 text-center text-white secondary-color--bg bg-hover fw-bold row-5">
-          نظام لبناء العضلات</div>
-        <div
-          class="div22 border-main py-md-4 py-1 align-self-center px-2 text-center text-white secondary-color--bg bg-hover fw-bold row-5">
-          أنظمة خاصة لهرمون المبايض FSH</div>
-        <div
-          class="div23 border-main py-md-4 py-1 align-self-center px-2 text-center text-white secondary-color--bg bg-hover fw-bold row-5">
+          class="div14 py-md-4 py-1 align-self-center px-2 text-center card-grid-lg fw-bold row-3">
           أنظمة للضغط</div>
         <div
-          class="div24 border-main py-md-4 py-1 align-self-center px-2 text-center text-white secondary-color--bg bg-hover fw-bold row-5">
+          class="div15 py-md-4 py-1 align-self-center px-2 text-center card-grid-lg fw-bold row-3">
+          أنظمة لأمراض المناعة</div>
+        <div
+          class="div16 py-md-4 py-1 align-self-center px-2 text-center card-grid-lg fw-bold row-4">
+          أنظمة نباتية</div>
+        <div
+          class="div17 py-md-4 py-1 align-self-center px-2 text-center card-grid-lg fw-bold row-4">
+          تعديل سلوك غذائي</div>
+        <div
+          class="div18 py-md-4 py-1 align-self-center px-2 text-center card-grid-lg fw-bold row-4">
+          أنظمة هرمون الحليب</div>
+        <div
+          class="div19 py-md-4 py-1 align-self-center px-2 text-center card-grid-lg fw-bold row-4">
+          أنظمة للكوليسترول</div>
+        <div
+          class="div20 py-md-4 py-1 align-self-center px-2 text-center card-grid-lg fw-bold row-4">
+          أنظمة للمتكممين</div>
+        <div
+          class="div21 py-md-4 py-1 align-self-center px-2 text-center card-grid-lg fw-bold row-5">
+          نظام لبناء العضلات</div>
+        <div
+          class="div22 py-md-4 py-1 align-self-center px-2 text-center card-grid-lg fw-bold row-5">
+          أنظمة خاصة لهرمون المبايض FSH</div>
+        <div
+          class="div23 py-md-4 py-1 align-self-center px-2 text-center card-grid-lg fw-bold row-5">
+          أنظمة لتكيسات المبايض</div>
+        <div
+          class="div24 py-md-4 py-1 align-self-center px-2 text-center card-grid-lg fw-bold row-5">
           أنظمة لمشاكل الغدة الدرقية</div>
         <div
-          class="div25 border-main py-md-4 py-1 align-self-center px-2 text-center text-white secondary-color--bg bg-hover fw-bold row-5">
+          class="div25 py-md-4 py-1 align-self-center px-2 text-center card-grid-lg fw-bold row-5">
           أنظمة لسوء الهضم</div>
       </div>
     </div>
@@ -214,7 +234,7 @@
     <div class="section_text text-center py-lg-5">
       <h1 class="section_header text-center pb-2">خطوات الدايت</h1>
     </div>
-    <div class="container d-flex justify-content-center flex-lg-row-reverse align-items-center flex-column my-4">
+    <div class="container d-flex justify-content-center flex-lg-row align-items-center flex-column my-4">
       <div class="card col-lg-3 col-10 px-3 my-5 card-1">
         <div class="icon-container"><i class="fa-solid fa-crown "></i>
         </div>
@@ -224,17 +244,17 @@
           </h5>
           <p class="card-text">
             احجز اشتراكك في الدايت بما فيه من برنامج الغذائي وبرنامج الرياضي
-            :المناسبين لك، حيث يتضمن الدايت ثلاث نقاط أساسية
+           المناسبين لك، حيث يتضمن الدايت ثلاث نقاط أساسية:
           <ul>
-            <li class="d-flex gap-3 flex-row-reverse align-items-center">
+            <li class="d-flex gap-3 align-items-center">
               <i class="fa-solid fa-check secondary-color"></i>
               <p>جدول غذائي خاص بك</p>
             </li>
-            <li class="d-flex gap-3 flex-row-reverse align-items-center">
+            <li class="d-flex gap-3 align-items-center">
               <i class="fa-solid fa-check secondary-color"></i>
               <p> جدول رياضي منزلي أو للجيم حسب رغبتك</p>
             </li>
-            <li class="d-flex gap-3 flex-row-reverse align-items-center">
+            <li class="d-flex gap-3 align-items-center">
               <i class="fa-solid fa-check secondary-color"></i>
               <p>متابعة شخصية 3 مرات بالأسبوع</p>
             </li>
@@ -245,7 +265,7 @@
       </div>
       <div class="img-container col-2 d-lg-inline-block d-none">
         <img class="img-fluid"
-          src="assets/img/vecteezy_silhouettes-set-of-arrow-collection-arrow-vector_5490594 [Converted].png" alt="" />
+          src="assets/img/arrows.png" alt="" />
       </div>
 
       <div class="card col-lg-3  col-10 px-3 my-5 card-2">
@@ -263,7 +283,7 @@
       </div>
       <div class="img-container col-2 d-lg-inline-block d-none">
         <img class="img-fluid"
-          src="assets/img/vecteezy_silhouettes-set-of-arrow-collection-arrow-vector_5490594 [Converted].png" alt="" />
+          src="assets/img/arrows.png" alt="" />
       </div>
       <div class="card col-lg-3  col-10 px-3 my-5 card-3">
         <div class="icon-container"><i class="fa-solid fa-person-walking px-4"></i>
@@ -272,7 +292,7 @@
           <h5 class="card-title text-center mb-3 secondary-color">سنتابع سوياً تقدمك</h5>
 
           <p class="card-text">
-            سأشرف على حالتك بشكل دائم، وأجيب على أسئلتك المختلفة، وسنتابع سوياً تقدمك خلال رحلة خسارتك للوزن!
+            سأشرف على حالتك بشكل دائم، وأجيب على أسئلتك المختلفة، وسنتابع سوياً تقدمك خلال رحلة خسارتك للوزن !
 
           </p>
         </div>
@@ -281,7 +301,7 @@
     </div>
     <div class="container text-center">
       <button type="button" class="btn btn-primary btn-secricbe">
-        احجز اشتراكك الأن !
+        احجز اشتراكك الآن !
       </button>
     </div>
   </section>
@@ -296,55 +316,51 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="slide-container">
-              <h2 class="mb-5 text-light-dark">المشترك/ة: خديجة</h2>
+              <h2 class="mb-5 text-light-dark">المشترك/ة: عائشة</h2>
               <div class="container text-center d-grid">
                 <div class="row justify-content-evenly">
-                  <div class="col-md-4 box-after-main py-1">
-                    <h4>بعد الاشتراك بأسبوعين</h4>
-                  </div>
                   <div class="col-md-4 box-before-main py-1">
                     <h4>قبل</h4>
                   </div>
-
+                  <div class="col-md-4 box-after-main py-1">
+                    <h4>بعد الاشتراك بأسبوعين</h4>
+                  </div>
                 </div>
-
                 <div class="row justify-content-evenly my-4">
+                  <div class="col-3 d-flex flex-column ">
+                    <div class="box-title main-color-dark mb-2">
+                      <h3>الذراع الأيمن</h3>
+                    </div>
+                    <div class="box-before">
+                      <h3>39 سم</h3>
+                    </div>
+                    <div class="box-after">
+                      <h3>35 سم</h3>
+                    </div>
+                  </div>
                   <div class="col-3 d-flex flex-column ">
                     <div class="box-title main-color-dark mb-2">
                       <h3>الذراع الأيسر</h3>
                     </div>
 
                     <div class="box-before">
-                      <h3>40</h3>
+                      <h3>38 سم</h3>
                     </div>
                     <div class="box-after">
-                      <h3>35</h3>
-                    </div>
-
-
-                  </div>
-                  <div class="col-3 d-flex flex-column ">
-                    <div class="box-title main-color-dark mb-2">
-                      <h3>الذراع الأيمن</h3>
-                    </div>
-                    <div class="box-before">
-                      <h3>40</h3>
-                    </div>
-                    <div class="box-after">
-                      <h3>35</h3>
+                      <h3>34 سم</h3>
                     </div>
                   </div>
                 </div>
                 <div class="row justify-content-evenly my-4">
                   <div class="col-3 d-flex flex-column ">
                     <div class="box-title main-color-dark mb-2">
-                      <h3>الخصر</h3>
+                      <h3>البطن</h3>
                     </div>
                     <div class="box-before">
-                      <h3>93</h3>
+                      <h3>113 سم</h3>
                     </div>
                     <div class="box-after">
-                      <h3>91</h3>
+                      <h3>106 سم</h3>
                     </div>
                   </div>
                   <div class="col-3 d-flex flex-column ">
@@ -352,48 +368,50 @@
                       <h3>الوزن</h3>
                     </div>
                     <div class="box-before">
-                      <h3>95.3</h3>
+                      <h3>101 كغ</h3>
                     </div>
                     <div class="box-after">
-                      <h3>90</h3>
+                      <h3>93 كغ</h3>
                     </div>
                   </div>
                   <div class="col-3 d-flex flex-column ">
                     <div class="box-title main-color-dark mb-2">
-                      <h3>البطن</h3>
+                      <h3>الخصر</h3>
                     </div>
                     <div class="box-before">
-                      <h3>111</h3>
+                      <h3>93 سم</h3>
                     </div>
                     <div class="box-after">
-                      <h3>100</h3>
+                      <h3>88 سم</h3>
                     </div>
                   </div>
+                
                 </div>
                 <div class="row justify-content-evenly my-4">
-                  <div class="col-3 d-flex flex-column ">
-                    <div class="box-title main-color-dark mb-2">
-                      <h3>الفخذ الأيسر</h3>
-                    </div>
-                    <div class="box-before">
-                      <h3>61</h3>
-                    </div>
-                    <div class="box-after">
-                      <h3>58</h3>
-                    </div>
-                  </div>
                   <div class="col-3 d-flex flex-column ">
                     <div class="box-title main-color-dark mb-2">
                       <h3>الفخذ الأيمن
                       </h3>
                     </div>
                     <div class="box-before">
-                      <h3>61</h3>
+                      <h3>75 سم</h3>
                     </div>
                     <div class="box-after">
-                      <h3>58</h3>
+                      <h3>67 سم</h3>
                     </div>
                   </div>
+                  <div class="col-3 d-flex flex-column ">
+                    <div class="box-title main-color-dark mb-2">
+                      <h3>الفخذ الأيسر</h3>
+                    </div>
+                    <div class="box-before">
+                      <h3>75 سم</h3>
+                    </div>
+                    <div class="box-after">
+                      <h3>68 سم</h3>
+                    </div>
+                  </div>
+                 
                 </div>
 
               </div>
@@ -404,52 +422,48 @@
               <h2 class="mb-5 text-light-dark">المشترك/ة: حياة</h2>
               <div class="container text-center d-grid">
                 <div class="row justify-content-evenly">
-                  <div class="col-md-4 box-after-main py-1">
-                    <h4>بعد الاشتراك بأسبوعين</h4>
-                  </div>
                   <div class="col-md-4 box-before-main py-1">
                     <h4>قبل</h4>
                   </div>
-
+                  <div class="col-md-4 box-after-main py-1">
+                    <h4>بعد الاشتراك بأسبوعين</h4>
+                  </div>
                 </div>
-
                 <div class="row justify-content-evenly my-4">
+                  <div class="col-3 d-flex flex-column ">
+                    <div class="box-title main-color-dark mb-2">
+                      <h3>الذراع الأيمن</h3>
+                    </div>
+                    <div class="box-before">
+                      <h3>37 سم</h3>
+                    </div>
+                    <div class="box-after">
+                      <h3>33 سم</h3>
+                    </div>
+                  </div>
                   <div class="col-3 d-flex flex-column ">
                     <div class="box-title main-color-dark mb-2">
                       <h3>الذراع الأيسر</h3>
                     </div>
 
                     <div class="box-before">
-                      <h3>37</h3>
+                      <h3>37 سم<</h3>
                     </div>
                     <div class="box-after">
-                      <h3>33</h3>
-                    </div>
-
-
-                  </div>
-                  <div class="col-3 d-flex flex-column ">
-                    <div class="box-title main-color-dark mb-2">
-                      <h3>الذراع الأيمن</h3>
-                    </div>
-                    <div class="box-before">
-                      <h3>37</h3>
-                    </div>
-                    <div class="box-after">
-                      <h3>33</h3>
+                      <h3>33 سم</h3>
                     </div>
                   </div>
                 </div>
                 <div class="row justify-content-evenly my-4">
                   <div class="col-3 d-flex flex-column ">
                     <div class="box-title main-color-dark mb-2">
-                      <h3>الخصر</h3>
+                      <h3>البطن</h3>
                     </div>
                     <div class="box-before">
-                      <h3>93</h3>
+                      <h3>111 سم</h3>
                     </div>
                     <div class="box-after">
-                      <h3>91</h3>
+                      <h3>103 سم</h3>
                     </div>
                   </div>
                   <div class="col-3 d-flex flex-column ">
@@ -457,46 +471,47 @@
                       <h3>الوزن</h3>
                     </div>
                     <div class="box-before">
-                      <h3>86.2</h3>
+                      <h3>86.2 كغ</h3>
                     </div>
                     <div class="box-after">
-                      <h3>81.8</h3>
+                      <h3>81.8 كغ</h3>
                     </div>
                   </div>
                   <div class="col-3 d-flex flex-column ">
                     <div class="box-title main-color-dark mb-2">
-                      <h3>البطن</h3>
+                      <h3>الخصر</h3>
                     </div>
                     <div class="box-before">
-                      <h3>111</h3>
+                      <h3>93 سم</h3>
                     </div>
                     <div class="box-after">
-                      <h3>103</h3>
+                      <h3>91 سم</h3>
                     </div>
                   </div>
+                
                 </div>
                 <div class="row justify-content-evenly my-4">
-                  <div class="col-3 d-flex flex-column ">
-                    <div class="box-title main-color-dark mb-2">
-                      <h3>الفخذ الأيسر</h3>
-                    </div>
-                    <div class="box-before">
-                      <h3>61</h3>
-                    </div>
-                    <div class="box-after">
-                      <h3>58</h3>
-                    </div>
-                  </div>
                   <div class="col-3 d-flex flex-column ">
                     <div class="box-title main-color-dark mb-2">
                       <h3>الفخذ الأيمن
                       </h3>
                     </div>
                     <div class="box-before">
-                      <h3>61</h3>
+                      <h3>61 سم</h3>
                     </div>
                     <div class="box-after">
-                      <h3>58</h3>
+                      <h3>58 سم</h3>
+                    </div>
+                  </div>
+                  <div class="col-3 d-flex flex-column ">
+                    <div class="box-title main-color-dark mb-2">
+                      <h3>الفخذ الأيسر</h3>
+                    </div>
+                    <div class="box-before">
+                      <h3>61 سم</h3>
+                    </div>
+                    <div class="box-after">
+                      <h3>58 سم</h3>
                     </div>
                   </div>
                 </div>
@@ -506,55 +521,51 @@
           </div>
           <div class="swiper-slide">
             <div class="slide-container">
-              <h2 class="mb-5 text-light-dark">المشترك/ة: عائشة</h2>
+              <h2 class="mb-5 text-light-dark">المشترك/ة: خديجة</h2>
               <div class="container text-center d-grid">
                 <div class="row justify-content-evenly">
-                  <div class="col-md-4 box-after-main py-1">
-                    <h4>بعد الاشتراك بأسبوعين</h4>
-                  </div>
                   <div class="col-md-4 box-before-main py-1">
                     <h4>قبل</h4>
                   </div>
-
+                  <div class="col-md-4 box-after-main py-1">
+                    <h4>بعد الاشتراك بأسبوعين</h4>
+                  </div>
                 </div>
-
                 <div class="row justify-content-evenly my-4">
+                  <div class="col-3 d-flex flex-column ">
+                    <div class="box-title main-color-dark mb-2">
+                      <h3>الذراع الأيمن</h3>
+                    </div>
+                    <div class="box-before">
+                      <h3>40 سم</h3>
+                    </div>
+                    <div class="box-after">
+                      <h3>35 سم</h3>
+                    </div>
+                  </div>
                   <div class="col-3 d-flex flex-column ">
                     <div class="box-title main-color-dark mb-2">
                       <h3>الذراع الأيسر</h3>
                     </div>
 
                     <div class="box-before">
-                      <h3>38</h3>
+                      <h3>40 سم</h3>
                     </div>
                     <div class="box-after">
-                      <h3>34</h3>
-                    </div>
-
-
-                  </div>
-                  <div class="col-3 d-flex flex-column ">
-                    <div class="box-title main-color-dark mb-2">
-                      <h3>الذراع الأيمن</h3>
-                    </div>
-                    <div class="box-before">
-                      <h3>39</h3>
-                    </div>
-                    <div class="box-after">
-                      <h3>35</h3>
+                      <h3>35 سم</h3>
                     </div>
                   </div>
                 </div>
                 <div class="row justify-content-evenly my-4">
                   <div class="col-3 d-flex flex-column ">
                     <div class="box-title main-color-dark mb-2">
-                      <h3>الخصر</h3>
+                      <h3>البطن</h3>
                     </div>
                     <div class="box-before">
-                      <h3>93</h3>
+                      <h3>111 سم</h3>
                     </div>
                     <div class="box-after">
-                      <h3>88</h3>
+                      <h3>100 سم</h3>
                     </div>
                   </div>
                   <div class="col-3 d-flex flex-column ">
@@ -562,48 +573,50 @@
                       <h3>الوزن</h3>
                     </div>
                     <div class="box-before">
-                      <h3>101</h3>
+                      <h3>95.3 كغ</h3>
                     </div>
                     <div class="box-after">
-                      <h3>93</h3>
+                      <h3>90 كغ</h3>
                     </div>
                   </div>
                   <div class="col-3 d-flex flex-column ">
                     <div class="box-title main-color-dark mb-2">
-                      <h3>البطن</h3>
+                      <h3>الخصر</h3>
                     </div>
                     <div class="box-before">
-                      <h3>113</h3>
+                      <h3>93 سم</h3>
                     </div>
                     <div class="box-after">
-                      <h3>106</h3>
+                      <h3>91 سم</h3>
                     </div>
                   </div>
+                
                 </div>
                 <div class="row justify-content-evenly my-4">
-                  <div class="col-3 d-flex flex-column ">
-                    <div class="box-title main-color-dark mb-2">
-                      <h3>الفخذ الأيسر</h3>
-                    </div>
-                    <div class="box-before">
-                      <h3>75</h3>
-                    </div>
-                    <div class="box-after">
-                      <h3>68</h3>
-                    </div>
-                  </div>
                   <div class="col-3 d-flex flex-column ">
                     <div class="box-title main-color-dark mb-2">
                       <h3>الفخذ الأيمن
                       </h3>
                     </div>
                     <div class="box-before">
-                      <h3>75</h3>
+                      <h3>61 سم</h3>
                     </div>
                     <div class="box-after">
-                      <h3>67</h3>
+                      <h3>58 سم</h3>
                     </div>
                   </div>
+                  <div class="col-3 d-flex flex-column ">
+                    <div class="box-title main-color-dark mb-2">
+                      <h3>الفخذ الأيسر</h3>
+                    </div>
+                    <div class="box-before">
+                      <h3>61 سم</h3>
+                    </div>
+                    <div class="box-after">
+                      <h3>58 سم</h3>
+                    </div>
+                  </div>
+                 
                 </div>
 
               </div>
@@ -729,25 +742,26 @@
   <!--/////////////////////////////// Footer /////////////////////////////////// -->
   <footer class="px-md-0 px-5">
     <div class="container d-flex justify-content-between align-items-center">
-      <div class="img-container col-md-2 col-2">
+      <div class="img-container col-md-2 col-4">
         <img src="assets/img/logo.png" alt="" class="w-100">
       </div>
 
       <div class="d-flex gap-3 flex-column">
         <ul class="d-flex social-media gap-3 justify-content-center m-0 px-0">
-          <li class="social-media-link nav-link "><a class=" text-decoration-none" href=""><i
+          <li class="social-media-link nav-link "><a class=" text-decoration-none" href="https://www.instagram.com/adidi3t/?igshid=YmMyMTA2M2Y%3D"><i
                 class="fa-brands fa-instagram secondary-color h4"></i></a></li>
-          <li class="social-media-link nav-link "><a class=" text-decoration-none" href=""><i
-                class="fa-brands fa-facebook secondary-color h4"></i></a></li>
+          <li class="social-media-link nav-link "><a class=" text-decoration-none" href="https://www.snapchat.com/add/adidi3t"><i
+                class="fa-brands fa-snapchat secondary-color h4"></i></a></li>
+          <li class="social-media-link nav-link "><a class=" text-decoration-none" href="https://api.whatsapp.com/send/?phone=966534236007&text&type=phone_number&app_absent=0"><i
+                class="fa-brands fa-whatsapp secondary-color h4"></i></a></li>
         </ul>
-        <a class="nav-link text-decoration-none secondary-color" href="">privacy policy</a>
-        <a class="nav-link text-decoration-none secondary-color" href="">terms of use</a>
+        <a class="nav-link text-decoration-none secondary-color" href="assets/addons/Adidiet Privacy Policy.pdf">privacy policy</a>
+        <a class="nav-link text-decoration-none secondary-color" href="assets/addons/Adidiet Terms of Service.pdf">terms of use</a>
       </div>
     </div>
     <div class="devolper text-center pt-5 pb-2">
       <h6 class="text-center secondary-color">2022 &copy; جميع الحقوق محفوظة </h6>
-      <p class="text-center secondary-color">
-        Developed by: <a class="secondary-color text-decoration-none" href="#">Ayham Mesho</a></p>
+      
     </div>
 
   </footer>
@@ -755,8 +769,9 @@
 
   <!-- سوشال ميديا جانبية -->
   <div class="float-social-media hidden">
-    <a class=" text-decoration-none" href=""><i class="fa-brands fa-instagram text-white h1 mb-0"></i></a>
-    <a class=" text-decoration-none" href=""><i class="fa-brands fa-facebook text-white h1 mb-0"></i></a>
+    <a class=" text-decoration-none" href="https://www.instagram.com/adidi3t/?igshid=YmMyMTA2M2Y%3D"><i class="fa-brands fa-instagram text-white h1 mb-0"></i></a>
+    <a class=" text-decoration-none" href="https://www.snapchat.com/add/adidi3t"><i class="fa-brands fa-snapchat text-white h1 mb-0"></i></a>
+    <a class=" text-decoration-none" href="https://api.whatsapp.com/send/?phone=966534236007&text&type=phone_number&app_absent=0"><i class="fa-brands fa-whatsapp text-white h1 mb-0"></i></a>
   </div>
 
   <!-- العودة لأعلى الصفحة -->
@@ -766,15 +781,20 @@
   <!-- نافذة الاشتراك -->
   <div style="display:none;" class="dialog hidden">
     <div class="message hidden ">
+      <div class="sale">
+        <span> خصم 30%</span>
+      </div>
     
       <div class="payment">
         <h3 class="secondary-color">اشترك في برنامج الدايت من اديدايت الآن
         </h3>
         <div class="prices d-flex gap-3 justify-content-center align-items-center">
-        <h5 class="old-price">رس 200</h5>
-        <h3 class="price main-color">رس 150</h3>
+          <h3 class="price main-color">140 رس</h3>
+        <h5 class="old-price">200 رس</h5>
       </div>
+      <div id="smart-button-container">
         <div id="paypal-button-container"></div>
+      </div>
       </div>
 
       <button class="btn btn_confirm"> <i class="fa-solid fa-xmark secondary-color"></i></button>
@@ -782,12 +802,13 @@
   </div>
   <script src="assets/js/scrollreveal.js"></script>
   <script src="assets/js/bootstrap.bundle.min.js"
-    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
     crossorigin="anonymous"></script>
   <script src="assets/js/font-awsome.js" crossorigin="anonymous"></script>
   <script src="assets/js/swiper-bundle.min.js"></script>
-  <script src="https://www.paypal.com/sdk/js?client-id=test&currency=USD&intent=capture"
-    data_source="integrationbuilder"></script>
+  <!-- <script src="https://www.paypal.com/sdk/js?client-id=Aa5jDtsplDN-X4Y61G3OIrgIhIJAsXguJg0jcUMvNuwUZruDDIS6PXJZMo3PKQdtVsIqVZmZlz1zz-ok&currency=USD&intent=capture"
+    data_source="integrationbuilder"></script> -->
+    <!-- <script src="https://www.paypal.com/sdk/js?client-id=Aa5jDtsplDN-X4Y61G3OIrgIhIJAsXguJg0jcUMvNuwUZruDDIS6PXJZMo3PKQdtVsIqVZmZlz1zz&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script> -->
+    <script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
   <script src="assets/js/index.js"></script>
 
 </body>

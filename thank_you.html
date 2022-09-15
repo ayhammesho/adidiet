@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <title>Adidiet | Thank You page</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    @font-face {
+      font-family: "Jory-Light";
+      src: url("assets/Fonts/ArbFONTS-DG-Jory-Light.ttf");
+    }
+    @font-face {
+      font-family: "Jory-Regular";
+      src: url("assets/Fonts/ArbFONTS-DG-Jory-Reg.ttf");
+    }
+
+    body {
+      font-family: "Jory-Light", sans-serif;
+    }
+
+    .thank_you {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .thank_you h3 {
+      font-size: 5rem;
+      color: #f68da1;
+      font-family: "Jory-Light", sans-serif;
+    }
+
+    .thank_you p {
+      font-size: 2rem;
+      color: #93d6bc;
+    }
+
+    .thank_you a {
+      color: #333;
+
+      font-size: 1.5rem;
+      margin-top: 1rem;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .thank_you a:hover {
+      text-decoration: none;
+    }
+
+    @media only screen and (max-width: 850px) {
+      .thank_you h3 {
+        font-size: 2rem;
+      }
+
+      .thank_you p {
+        font-size: 1.15rem;
+        text-align: center;
+      }
+
+      .thank_you a {
+        font-size: 1rem;
+      }
+    }
+  </style>
+  <body>
+    <div class="thank_you">
+      <h3>عملية التحويل قد تمت</h3>
+      <p>
+        شكرا لك لأختيارك أديدايت تواصل معنا على الواتساب في الرابط أدناه لنبدأ
+        رحلتك.
+      </p>
+      <a
+        href="https://api.whatsapp.com/send/?phone=966534236007&text&type=phone_number&app_absent=0.html"
+        >تواصل معنا هنا</a
+      >
+    </div>
+  </body>
+</html>

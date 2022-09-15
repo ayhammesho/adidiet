@@ -44,7 +44,7 @@
 }
 
 body {
-  font-family: "Jory-Light", sans-serif;
+  font-family: "Jory-Regular", sans-serif !important;
 }
 
 h1,
@@ -105,12 +105,86 @@ p {
   box-shadow: 0px 5px 7px rgb(51, 51, 51, 0.2);
 }
 
+/* شريط التخفيض */
+.fixed {
+  position: relative;
+  top: 0;
+  right: 0;
+  background-color: #93d6bc;
+  color: #fff;
+  overflow: hidden;
+  padding: 0.25rem 0.75rem;
+  z-index: 20;
+}
+
+.fixed h3 {
+  margin-bottom: 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+.marquee {
+  height: 30px;
+  width: 100%;
+  background-color: #93d6bc;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+  font-size: 1.25rem;
+}
+
+.marquee div {
+  display: block;
+  width: 200%;
+  height: 30px;
+  position: absolute;
+  overflow: hidden;
+  animation: marquee 15s linear infinite;
+}
+
+.marquee div:hover {
+  animation-play-state: paused;
+}
+
+.marquee span {
+  float: left;
+  width: 50%;
+}
+
+.marquee span a {
+  text-decoration: none;
+  color: #f68da1;
+}
+
+@keyframes marquee {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
 /* قسم الصفحة الرئيسي */
 .bg {
   background-image: url("../img/wave-bg.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.navbar-toggler {
+  border: var(--bs-border-width) solid #fff !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
+
+.btn-close {
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 .nav-link a {
@@ -188,6 +262,21 @@ p {
   grid-template-rows: repeat(5, 1fr);
   grid-column-gap: 15px;
   grid-row-gap: 15px;
+}
+
+.card-grid-lg {
+  background-color: var(--light-bg-pink);
+  border: 1px solid var(--light-bg-pink);
+  color: #fff;
+  transition: all 0.3s ease;
+  border-radius: 11px;
+}
+
+.card-grid-lg:hover {
+  background-color: transparent;
+  color: var(--light-bg-pink) !important;
+  transform: translateY(-7px);
+  box-shadow: 0px 5px 7px rgb(51, 51, 51, 0.2);
 }
 
 .div1 {
@@ -355,7 +444,6 @@ p {
 
 /* قسم الأسئلة الشائعة */
 .accordion-button {
-  flex-direction: row-reverse;
   justify-content: space-between;
   text-align: right !important;
 }
@@ -386,6 +474,21 @@ p {
 }
 
 /* نافذة الاشتراك */
+.dialog .message .sale {
+  position: absolute;
+  top: 25px;
+  left: -42px;
+  transform: rotate(-40deg);
+  display: inline-block;
+  background-color: var(--light-bg-green);
+  padding: 0px 50px;
+}
+
+.dialog .message .sale span {
+  color: #ffffff;
+  font-size: 1.25rem;
+}
+
 .dialog {
   position: fixed;
   top: 0;
@@ -414,7 +517,7 @@ p {
   -webkit-transition: all 0.4s ease-in;
   transition: all 0.4s ease-in;
   overflow-y: scroll;
-  
+  overflow-x: hidden;
 }
 
 .dialog .message .main_message {
@@ -435,6 +538,18 @@ p {
 }
 .dialog .message .btn_confirm i {
   font-size: 2rem;
+}
+
+.payment {
+  margin-top: 1.6rem;
+}
+
+.payment .secondary-color {
+  margin-bottom: 0.7rem;
+}
+
+.prices {
+  margin-bottom: 0.7rem;
 }
 
 .old-price {
@@ -486,6 +601,24 @@ p {
 }
 
 /* responsive  */
+@media only screen and (max-width: 850px) {
+  .btn_up {
+    padding: 0.5rem 1rem;
+  }
+
+  .parent {
+    grid-column-gap: 0;
+  }
+
+  .card-grid-lg {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid var(--light-bg-pink);
+    color: var(--dark-color) !important;
+    background-color: transparent;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .btn-sub {
     border: none !important;
@@ -601,8 +734,13 @@ p {
 
   .dialog .message {
     width: 23rem;
-    height: 21rem;}
+    height: 21rem;
+  }
 
+  .h3,
+  h3 {
+    font-size: calc(0.9rem + 0.6vw) !important;
+  }
 }
 
 /* smaller Responsive */
