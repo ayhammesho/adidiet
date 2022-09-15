@@ -72,10 +72,8 @@ function initPayPalButton() {
           );
 
           // // Show a success message within this page, e.g.
-          const element = document.getElementById("paypal-button-container");
-          element.innerHTML = "";
-          element.innerHTML = "<h3>Thank you for your payment!</h3>";
-          // actions.redirect("/thank_you.html");
+     
+          actions.redirect("/thank_you.html");
 
           // Or go to another URL:  actions.redirect('thank_you.html');
         });
